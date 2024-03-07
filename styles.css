@@ -1,0 +1,186 @@
+/* Import Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Boiler Plate of Modern CSS */
+/* Reset CSS */
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* Global Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #333;
+    /* text-align: center; */
+}
+
+/* Hide scrollbar for Firefox */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #cbcbcb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Grid System (Optional) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* Responsive Media Queries (Optional) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Additional Custom Styles */
+/* Add your custom styles below this line */
+
+#main {
+    min-height: 100vh;
+    border-bottom: 2px solid #439e8d;
+}
+
+#main nav{
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    margin: 50px 0px;
+    /* background-color: red; */
+}
+
+#main nav h2{
+    text-align: center;
+    font-weight: 700;
+    color: #439e8d;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid rgb(211, 204, 204);
+    padding: 8px;
+    text-align: center;
+    color: #439e8d;
+    width: 12%;
+    height: 70px;
+}
+a {
+    text-decoration: none; /* remove underlines from links */
+    color: inherit; /* inherit text color from parent */
+    display: block; /* make links behave like blocks */
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    color: #cbcbcb; /* Change color to white on hover */
+}
+
+
+#details {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-div, .right-div {
+    width: 40%;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #439e8d;
+    overflow: auto; /* Enable scrolling if content exceeds height */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.middle-div {
+    width: 20%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid #439e8d;
+    border-right: 2px solid #439e8d;
+    border-bottom: 2px solid #439e8d;
+    color: #cbcbcb;
+    overflow: auto; /* Enable scrolling if content exceeds height */
+    padding: 10px;
+}
+
+h3 {
+    font-weight: 600;
+    color: #439e8d;
+}
