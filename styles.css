@@ -109,7 +109,7 @@ a:hover {
 /* Add your custom styles below this line */
 
 #main {
-    min-height: 100vh;
+    min-height: 200vh;
     border-bottom: 2px solid #439e8d;
 }
 
@@ -183,4 +183,43 @@ a:hover {
 h3 {
     font-weight: 600;
     color: #439e8d;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    #details {
+        display: flex;
+        min-height: 100vh;
+        min-width: 210vw;
+    }
+    
+    .left-div, .right-div {
+        width: 20%;
+        min-height: 100vh;
+        background-color: #000000;
+        color: #439e8d;
+        overflow: auto; /* Enable scrolling if content exceeds height */
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .middle-div {
+        width: 60%;
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0);
+        border-left: 2px solid #439e8d;
+        border-right: 2px solid #439e8d;
+        border-bottom: 2px solid #439e8d;
+        color: #cbcbcb;
+        overflow: auto; /* Enable scrolling if content exceeds height */
+        padding: 10px;
+    }
 }

@@ -101,14 +101,16 @@
                 </tr>
                 <tr>
                     <td><a href="#devops">Devops</a></td>
-                    <td><a href="#python">Python</a></td>
-                    <td><a href="#postgresql">PostgreSQL</a></td>
-                    <td><a href="#sqlserver">SQL Server</a></td>
+                    <td><a href="#hooks"></a>Hooks in React</td>
+                    <td><a href="#micro-frontend">Micro Frontend</a></td>
+                    <td><a href="#keys">Keys in React</a></td>
                     <td><a href="#mysql">My SQL</a></td>
                     <td><a href="#nosql">No SQL</a></td>
                     <td><a href="#junit">JUnit</a></td>
                     <td><a href="#selenium">Selenium</a></td>
                 </tr>
+
+                
             </table>
         </div>
     </section>
@@ -329,22 +331,7 @@
 
             </section>
 
-            <section id="redux">
-                <h3>React Redux</h3>
-
-                React Redux is a library used for state management in React applications.<br><br> 
-
-                It provides a centralized store to manage the application's state, enabling components to access 
-                and update the state without having to pass data through props. <br><br>
-
-                The connect function allows components to connect to the Redux store and access the state or 
-                dispatch actions, improving performance by selectively subscribing to relevant parts of the state. <br><br>
-
-                Additionally, React Redux supports middleware for intercepting and modifying actions, and it 
-                integrates with the Redux DevTools extension for powerful debugging capabilities.<br><br>
-
-            </section>
-
+            
             <section id="mongodb">
                 <h3>MongoDB Database</h3>
 
@@ -839,10 +826,46 @@
             </section>
 
             <section id="micro-frontend">
-                <h3>Micro-frontend</h3>
+                <h3>Micro-Frontend</h3>
+                Micro frontends and microservices are architectural approaches used in software development to build large and complex applications.<br><br>
 
-                The goal of devops environment is to streamline the software delivery process, enhance the 
-                quality of software releases and enable faster and more reliable delivery of features and updates to end-users<br><br>
+                Micro frontends apply the principles of microservices to the frontend development. They involve breaking down a large frontend application into smaller, more manageable parts, each of which is developed and deployed independently. These parts, or micro frontends, can be developed using different technologies and can be managed by different teams. They are then composed together to form the final user interface.<br><br>
+
+                On the other hand, microservices are an architectural style that structures an application as a collection of loosely coupled services. Each service is responsible for a specific business function and can be developed, deployed, and scaled independently. Microservices communicate with each other over the network using lightweight protocols such as HTTP or messaging queues.<br><br>
+
+                Module Federation, a concept introduced by Webpack, is a technique that enables the creation of micro frontends by allowing different parts of a frontend application to be developed and deployed independently while still being able to share code and resources.<br><br>
+                
+            </section>
+
+            <section id="redux">
+                <h3>Redux</h3>
+
+                React Redux is used in React applications for managing the application's state. It's based on the principles of Flux, which highlights the unidirectional data flow. Redux helps manage the state of your application in a predictable way, making it easier to understand and debug.<br><br>
+
+                Redux works by maintaining the application state in a single immutable state tree, called the store. Components can dispatch actions to the store, which are plain JavaScript objects describing what happened. Reducers, pure functions, then specify how the state should change in response to actions, producing a new state.<br><br>
+
+                React components can subscribe to the store, and whenever the state in the store changes, they are automatically re-rendered with the new data. This decouples the state management logic from the components, making them more reusable and easier to test.<br><br>
+
+                Reducers are functions that take the current state and an action as arguments and return a new state. They are responsible for updating the state based on the action type. Reducers should be pure functions, which means they should not mutate the state directly. Instead, they should return a new state object with the updated data.<br><br>
+            </section>
+
+            <section id="keys">
+                <h3>Keys in React</h3>
+
+                In React, keys are special attributes that are used to uniquely identify elements in a collection of elements. When rendering a list of elements, React uses keys to track which items have changed, are added, or are removed.<br><br>
+
+                Keys help React identify which items in the list have changed, are added, or are removed. This allows React to efficiently update the UI without re-rendering all the elements in the list.<br><br>
+            </section>
+
+            <section id="hooks">
+                <h3>Hooks in React</h3>
+
+                Hooks are functions that let you use state and other React features in functional components. They were introduced in React 16.8 to allow functional components to have state and lifecycle features that were previously only available in class components.<br><br>
+
+                Hooks are functions that start with 'use' (e.g., useState, useEffect) and can be called inside functional components to add state or side effects. The most commonly used hooks are useState, useEffect, useContext, and useRef.<br><br>
+
+                useState allows you to add state to functional components.<br><br>
+                useEffect lets you perform side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM.<br><br>
             </section>
 
             <section>
