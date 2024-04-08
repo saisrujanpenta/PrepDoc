@@ -148,7 +148,8 @@ a {
 }
 
 a:hover {
-    color: #cbcbcb; /* Change color to white on hover */
+    color: #cbcbcb;
+    text-decoration: none; 
 }
 
 
